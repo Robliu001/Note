@@ -75,6 +75,7 @@ numpy.random.hypergeometric(ngood, nbad, nsammple, size)
 #### 正态分布
 numpy.random.normal(size)
 产生size个服从标准正态（平均值=0，标准差=1）分布的随机数。
+f(x)=e^(-x^2/2) / sqrt(2\*pi)
 
 ## matplotpylib.datetime
 
