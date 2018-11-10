@@ -76,6 +76,16 @@ numpy.random.hypergeometric(ngood, nbad, nsammple, size)
 numpy.random.normal(size)
 产生size个服从标准正态（平均值=0，标准差=1）分布的随机数。
 f(x)=e^(-x^2/2) / sqrt(2\*pi)
+#### 排序
+numpy.lexsort(参考序列，排序序列)，间接排序，返回的是索引
+numpy.sort_complex(复数数组),按照实部升序排序，对实部相同的参考虚部排序
+numpy.searchsorted(有序序列，待插序列) 将待插序列中的元素插入到有序序列的哪些位置，依然有序
+numpy.insert(被插序列，位置序列，待插序列)将待插序列中的元素，按照位置序列中的位置下标，插入被插序列，返回插入以后的结果。
+#### 定积分
+import scipy.integrate as si
+area = si.quad(f, a, b)
+#### 插值
+linear = si.interpld(dis_x, dis_y) # 线性差值器
 
 ## matplotpylib.datetime
 
